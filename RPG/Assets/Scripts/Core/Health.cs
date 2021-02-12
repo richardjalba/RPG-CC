@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using RPG.Core;
+using UnityEngine;
 
 namespace RPG.Combat
 {
@@ -23,14 +24,13 @@ namespace RPG.Combat
             }
         }
 
-        private void Die() {
+        private void Die() 
             {
                 if (isDead) return;
 
                 isDead = true;
                 GetComponent<Animator>().SetTrigger("die");
+                GetComponent<ActionScheduler>().CancelCurrentAction();
             }
-        }
-
     }
 }
