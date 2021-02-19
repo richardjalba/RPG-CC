@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 6248448620848612606}
   - component: {fileID: 1414555776521406564}
   - component: {fileID: 6585218918456412899}
+  - component: {fileID: 7983603551421243184}
   m_Layer: 0
   m_Name: Character
   m_TagString: Untagged
@@ -130,6 +131,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
+  maxSpeed: 6
 --- !u!114 &6248448620848612606
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -142,9 +144,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9217f605226d4ed41a8664c497e48b2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weaponRange: 2
   timeBetweenAttacks: 1
-  weaponDamage: 5
+  handTransform: {fileID: 0}
+  defaultWeapon: {fileID: 0}
 --- !u!114 &1414555776521406564
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -169,4 +171,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2f7a0ac898af344ba390fd0a2aa9a18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 100
+  healthPoints: 100
+--- !u!54 &7983603551421243184
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 726662084137603386}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
