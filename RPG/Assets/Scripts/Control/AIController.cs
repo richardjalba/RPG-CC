@@ -5,6 +5,7 @@ using RPG.Combat;
 using RPG.Core;
 using RPG.Movement;
 using UnityEngine;
+using RPG.Resources;
 
 namespace RPG.Control
 {
@@ -15,6 +16,7 @@ namespace RPG.Control
         [SerializeField] PatrolPath patrolPath;
         [SerializeField] float waypointTolerance = 1f;
         [SerializeField] float waypointDwellTime = 3f;
+        [Range(0,1)]
         [SerializeField] float patrolSpeedFraction = 0.2f;
 
         Fighter fighter;
